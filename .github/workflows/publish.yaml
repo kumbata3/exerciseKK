@@ -5,8 +5,8 @@ on:
     types: [published]
 
 env:
-  IMAGE_REG: ghcr.io
-  IMAGE_REPO: benc-uk/nodejs-demoapp
+  IMAGE_REG: kumbata3
+  IMAGE_REPO: exercisekk
 
 jobs:
   publish-image:
