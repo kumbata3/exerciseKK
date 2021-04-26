@@ -1,12 +1,12 @@
 name: CI Build App
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - 'src/**'
-      - '.github/workflows/**'
-  pull_request:
+  workflow_dispatch:
+    inputs:
+      IMAGE_TAG:
+        description: 'Image tag to be deployed'
+        required: true
+        default: 'latest'
 
 env:
   IMAGE_REG: kumbata3
